@@ -1,0 +1,46 @@
+.example5-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  overflow: hidden;
+}
+
+.example5-logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.example5-logo svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.example5-logo path {
+  fill: none;
+  stroke: #3498db;
+  stroke-width: 24;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.glow-effect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 1;
+  transform: translateZ(0);
+  will-change: transform, opacity;
+}
+
+/* Add a subtle shadow to the container */

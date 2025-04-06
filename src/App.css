@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E5E7EB; /* gray-200 */
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  background-color: #E5E7EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  background-color: #E5E7EB; /* gray-200 */
+}
+
+.main-content {
+  flex: 1;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-left: 280px; /* Width of the sidebar */
+  background-color: #E5E7EB; /* gray-200 */
+  min-height: 100vh;
+}
+
+.main-title {
+  color: #264D96;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  padding: 24px 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.logo-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container h2 {
+  display: none; 
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.animation-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation-wrapper svg {
+  width: 80%;
+  height: 80%;
+  max-width: 150px;
+  max-height: 150px;
+  color: #264D96;
+}
+
+.animation-wrapper svg .static-path {
+  fill: #264D96;
+  stroke: #264D96;
+}
+
+@media (max-width: 1400px) {
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  #root {
+    padding: 16px;
+  }
+}
+
+.content-container {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  padding: 24px;
+  background-color: #E5E7EB; /* gray-200 */
+}
+
+.animation-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.animation-container > * {
+  flex: 1;
+  position: relative;
+}
+
+.animations-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.animation-item {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation-title {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: #3498db;
+  font-weight: 600;
+  font-size: 16px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.animation-info {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide default styles */
+.logo,
+.card,
+.read-the-docs {
+  display: none;
+}
+
+.placeholder-content {
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin: 24px;
+}
+
+.placeholder-content h1 {
+  color: #264D96;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.placeholder-content p {
+  color: rgba(35, 35, 35, 0.8);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Move the blue color styling to sidebar menu icons specifically */
+.sidebar-container .menu-icon svg {
+  color: #264D96 !important;
+  fill: #264D96 !important;
+  stroke: #264D96 !important;
+}
+
+.sidebar-container .menu-icon svg path,
+.sidebar-container .menu-icon svg rect,
+.sidebar-container .menu-icon svg circle,
+.sidebar-container .menu-icon svg line {
+  fill: #264D96 !important;
+  stroke: #264D96 !important;
+}
